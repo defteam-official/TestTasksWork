@@ -13,7 +13,7 @@ namespace ReadWriterFilesKit
             const string standartDirPath = @"C:\github_defteam\ReadWriterFilesKit\Files";//основная папка
             string filePath;
             
-            string dateNow = Convert.ToString(DateTime.Now);
+            string dateNow = (DateTime.Now).ToString();
             string[] date = dateNow.Split(' ');
             
             string dirPath = date[0];
@@ -25,8 +25,7 @@ namespace ReadWriterFilesKit
             if(!file.Exists)
             {
                 WriteLine("Данного файла не существует!\nХотите ли Вы повторить ввод?(Да или Нет)");
-                string answer = ReadLine();
-                if (answer == "Yes" || answer == "yes" || answer == "Да"|| answer == "да")
+                if (ReadLine().ToLower() == "да")
                     Program.Main(null);
             }
             else

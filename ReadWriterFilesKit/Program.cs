@@ -10,8 +10,8 @@ namespace ReadWriterFilesKit
     {
         static void Main(string[] args)
         {
+            const string standartDirPath = @"C:\github_defteam\ReadWriterFilesKit\Files";//основная папка
             string filePath;
-            string standartDirPath = @"C:\github_defteam\ReadWriterFilesKit\Files";//основная папка
             
             string dateNow = Convert.ToString(DateTime.Now);
             string[] date = dateNow.Split(' ');

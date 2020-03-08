@@ -8,11 +8,7 @@ namespace ReadWriterFilesKit
 {
     class Program
     {
-        private const int SUCCESS = 0;
-        private const int FILE_or_DIR_DOES_NOT_EXIST = -1;
-
-
-        static int Main(string[] args)
+        static void Main(string[] args)
         {
             string filePath;
             string standartDirPath = @"C:\github_defteam\ReadWriterFilesKit\Files";//основная папка
@@ -32,26 +28,24 @@ namespace ReadWriterFilesKit
 
                 if (ReadLine() == "Да")
                     Program.Main(null);
-
-                return FILE_or_DIR_DOES_NOT_EXIST;
             }
-
-            DirectoryInfo standDirInfo = new DirectoryInfo(standartDirPath);
-            if (!standDirInfo.Exists)
+            else
             {
-                standDirInfo.Create();
-            }
-            else if(!hasDirDate(dirPath, standartDirPath))
-            {
-                standDirInfo.CreateSubdirectory(dirPath);
-            }
+                DirectoryInfo standDirInfo = new DirectoryInfo(standartDirPath);
+                if (!standDirInfo.Exists)
+                {
+                    standDirInfo.Create();
+                }
+                else if(!HasDirDate(dirPath, standartDirPath))
+                {
+                    standDirInfo.CreateSubdirectory(dirPath);
+                }
 
-            file.MoveTo(standartDirPath + "\\" + dirPath + "\\" + file.Name);
-
-            return SUCCESS;
+                file.MoveTo(standartDirPath + "\\" + dirPath + "\\" + file.Name);
+            }
         }
         
-        static private bool hasDirDate(string dir, string standartDirPath)
+        static private bool HasDirDate(string dir, string standartDirPath)
         {
             string[] dirs = Directory.GetDirectories(standartDirPath);
             

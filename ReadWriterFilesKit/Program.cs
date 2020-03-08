@@ -25,8 +25,8 @@ namespace ReadWriterFilesKit
             if(!file.Exists)
             {
                 WriteLine("Данного файла не существует!\nХотите ли Вы повторить ввод?(Да или Нет)");
-
-                if (ReadLine() == "Да")
+                string answer = ReadLine();
+                if (answer == "Yes" || answer == "yes" || answer == "Да"|| answer == "да")
                     Program.Main(null);
             }
             else

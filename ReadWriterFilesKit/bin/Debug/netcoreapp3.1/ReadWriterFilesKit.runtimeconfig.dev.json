@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\EDA2\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\EDA2\\.nuget\\packages"
-    ]
-  }
-}

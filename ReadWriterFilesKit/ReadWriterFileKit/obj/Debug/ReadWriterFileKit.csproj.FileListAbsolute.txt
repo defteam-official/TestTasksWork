@@ -1,0 +1,9 @@
+C:\github_defteam\ReadWriterFilesKit\ReadWriterFileKit\bin\Debug\ReadWriterFileKit.exe.config
+C:\github_defteam\ReadWriterFilesKit\ReadWriterFileKit\bin\Debug\ReadWriterFileKit.exe
+C:\github_defteam\ReadWriterFilesKit\ReadWriterFileKit\bin\Debug\ReadWriterFileKit.pdb
+C:\github_defteam\ReadWriterFilesKit\ReadWriterFileKit\obj\Debug\ReadWriterFileKit.csprojAssemblyReference.cache
+C:\github_defteam\ReadWriterFilesKit\ReadWriterFileKit\obj\Debug\ReadWriterFileKit.Form1.resources
+C:\github_defteam\ReadWriterFilesKit\ReadWriterFileKit\obj\Debug\ReadWriterFileKit.Properties.Resources.resources
+C:\github_defteam\ReadWriterFilesKit\ReadWriterFileKit\obj\Debug\ReadWriterFileKit.csproj.GenerateResource.cache
+C:\github_defteam\ReadWriterFilesKit\ReadWriterFileKit\obj\Debug\ReadWriterFileKit.exe
+C:\github_defteam\ReadWriterFilesKit\ReadWriterFileKit\obj\Debug\ReadWriterFileKit.pdb

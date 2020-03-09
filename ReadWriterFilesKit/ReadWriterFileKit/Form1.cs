@@ -69,9 +69,12 @@ namespace ReadWriterFileKit
             if(openFolder.ShowDialog() == DialogResult.OK)
             {
                 standartDirPath = openFolder.SelectedPath;
+                
+                lblStatus.Text = "Основная папка выбрана!";
+
+                btnOverviewFile.Enabled = true;
             }
 
-            lblStatus.Text = "Основная папка выбрана!";
         }
     }
 

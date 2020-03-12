@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.tbNameFolder = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnOverviewFile
@@ -41,7 +42,7 @@
             this.btnOverviewFile.BackColor = System.Drawing.Color.Peru;
             this.btnOverviewFile.Enabled = false;
             this.btnOverviewFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOverviewFile.Location = new System.Drawing.Point(121, 153);
+            this.btnOverviewFile.Location = new System.Drawing.Point(123, 219);
             this.btnOverviewFile.Name = "btnOverviewFile";
             this.btnOverviewFile.Size = new System.Drawing.Size(155, 41);
             this.btnOverviewFile.TabIndex = 0;
@@ -52,7 +53,7 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(27, 257);
+            this.lblStatus.Location = new System.Drawing.Point(29, 323);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(0, 24);
             this.lblStatus.TabIndex = 1;
@@ -81,7 +82,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(88, 115);
+            this.label2.Location = new System.Drawing.Point(90, 181);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(224, 24);
             this.label2.TabIndex = 4;
@@ -90,17 +91,30 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 218);
+            this.label3.Location = new System.Drawing.Point(29, 284);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "Статус:";
             // 
+            // tbNameFolder
+            // 
+            this.tbNameFolder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNameFolder.Enabled = false;
+            this.tbNameFolder.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.tbNameFolder.Location = new System.Drawing.Point(63, 125);
+            this.tbNameFolder.Name = "tbNameFolder";
+            this.tbNameFolder.Size = new System.Drawing.Size(284, 29);
+            this.tbNameFolder.TabIndex = 6;
+            this.tbNameFolder.Text = "Введите название папки...";
+            this.tbNameFolder.Click += new System.EventHandler(this.tbNameFolder_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 319);
+            this.ClientSize = new System.Drawing.Size(400, 380);
+            this.Controls.Add(this.tbNameFolder);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -109,7 +123,6 @@
             this.Controls.Add(this.btnOverviewFile);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.MaximumSize = new System.Drawing.Size(416, 358);
             this.MinimumSize = new System.Drawing.Size(416, 358);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -126,6 +139,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tbNameFolder;
     }
 }
 

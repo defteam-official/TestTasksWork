@@ -30,7 +30,7 @@ namespace ReadWriterFileKit
 
             if(openFile.ShowDialog() == DialogResult.OK)
             {
-                string newDirPath = GetDate();
+                string newDirPath = tbNameFolder.Text;
 
                 if(!HasDirDate(newDirPath, standartDirPath))
                 {
@@ -71,13 +71,18 @@ namespace ReadWriterFileKit
                 standartDirPath = openFolder.SelectedPath;
                 
                 lblStatus.Text = "Основная папка выбрана!";
-
+                
+                tbNameFolder.Enabled = true;
                 btnOverviewFile.Enabled = true;
             }
 
         }
 
-        
+        private void tbNameFolder_Click(object sender, EventArgs e)
+        {
+            tbNameFolder.Text = "";
+            tbNameFolder.ForeColor = Color.Black;
+        }
     }
 
 
